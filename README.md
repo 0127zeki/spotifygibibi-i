@@ -1,5 +1,32 @@
-# spotifygibibi-igit init
-git remote add origin https://github.com/<kullanici-adiniz>/<repo-adiniz>.git
-git add .
-git commit -m "İlk yükleme"
-git push -u origin main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_Blue.png" alt="Logo" />
+        </div>
+        <ul class="menu">
+            <li><span class="icon">🏠</span> Home</li>
+            <li><span class="icon">🔍</span> Search</li>
+            <li><span class="icon">📚</span> Your Library</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="topbar">
+            <input type="text" placeholder="Search for songs..." id="search-bar">
+        </div>
+        <div class="player-section">
+            <h3>Song List</h3>
+            <ul id="song-list"></ul>
+            <audio id="audio-player" controls></audio>
+        </div>
+    </div>
+    <script src="player.js"></script>
+</body>
+</html>
+
